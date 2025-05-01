@@ -1,23 +1,10 @@
 [
-    {
-      "id": "CAR001",
-      "carId":"2025-01-15",
-      "faults":"luxurious",
-      "date":"2025-01-15"
-
-    },
-    {
-      "id": "CAR001",
-      "carId":"2025-01-15",
-      "faults":"luxurious",
-      "date":"2025-01-15"
-
-    },
-    {
-      "id": "CAR001",
-      "carId":"2025-01-15",
-      "faults":"luxurious",
-      "date":"2025-01-15"
-
-    }
-  ]
+  {
+    "carNumber": "10687",
+    "date": "2025-05-31",
+    "faults": [
+      "GVHCJ"
+    ],
+    "id": "b549d02d-69dd-43ae-80c9-425dc17e92b2"
+  }
+]

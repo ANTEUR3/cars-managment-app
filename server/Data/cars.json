@@ -1,22 +1,26 @@
 [
-    {
-      "id": "CAR001",
-      "entryDtae":"2025-01-15",
-      "Type":"luxurious",
-      "available":"true"
-
-    },
-    {
-        "id": "CAR002",
-        "entryDtae":"2025-01-19",
-        "Type":"luxurious",
-          "available":"true"
-  
-    },
-    {
-        "id": "CAR001",
-        "entryDtae":"2025-01-20",
-        "Type":"luxurious",
-        "available":"true"
-    }
-  ]
+  {
+    "number": "10687",
+    "type": "luxury",
+    "date": "2025-06-10",
+    "availabale": true
+  },
+  {
+    "number": "209647",
+    "type": "electric",
+    "date": "2025-06-10",
+    "availabale": true
+  },
+  {
+    "number": "2020442",
+    "type": "electric",
+    "date": "2002-02-10",
+    "availabale": true
+  },
+  {
+    "number": "23456",
+    "type": "electric",
+    "date": "2025-06-03",
+    "availabale": true
+  }
+]
