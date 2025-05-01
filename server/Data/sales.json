@@ -1,0 +1,20 @@
+[
+    {
+      "carId": "CAR001",
+      "date":"2025-01-15",
+      "price":"luxurious"
+
+    },
+    {
+        "carId": "CAR001",
+        "date":"2025-01-15",
+        "price":"luxurious"
+  
+      },
+      {
+        "carId": "CAR001",
+        "date":"2025-01-15",
+        "price":"luxurious"
+  
+      }
+  ]
