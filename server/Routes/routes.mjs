@@ -130,9 +130,27 @@ saleRoute.post('/',async(req,res)=>{
     const data = await fs.readFile('./Data/sales.json', 'utf8');
     const sales= JSON.parse(data);
 
-    sales.push(newSale)
+    const cars = await fs.readFile('./Data/cars.json', 'utf8');
+    
+    // Parse the JSON string into a JavaScript object or array
+    const cars_ = JSON.parse(cars);
+    
+    cars_.map((car,i)=>{
+      console.log(car.number,newSale.carNumber)
+           if(car.number==newSale.carNumber){
+            console.log("ccc")
+                car.available=false;
+                return car
+           }else{
+            return car;
+           }
+    })
 
    await fs.writeFile('./Data/sales.json', JSON.stringify(sales, null, 2), 'utf8');
+
+    sales.push(newSale)
+
+   await fs.writeFile('./Data/cars.json', JSON.stringify(cars_, null, 2), 'utf8');
 
 
    return res.status(200).send(JSON.stringify(sales));

@@ -3,24 +3,108 @@
     "number": "10687",
     "type": "luxury",
     "date": "2025-06-10",
-    "availabale": true
+    "available": false
   },
   {
     "number": "209647",
     "type": "electric",
     "date": "2025-06-10",
-    "availabale": true
+    "available": false
   },
   {
     "number": "2020442",
     "type": "electric",
     "date": "2002-02-10",
-    "availabale": true
+    "available": false
   },
   {
     "number": "23456",
     "type": "electric",
     "date": "2025-06-03",
+    "available": false
+  },
+  {
+    "number": "494894",
+    "type": "electric",
+    "date": "2025-05-22",
     "availabale": true
+  },
+  {
+    "number": "64834",
+    "type": "luxury",
+    "date": "2025-05-03",
+    "availabale": true
+  },
+  {
+    "number": "48342",
+    "type": "economical",
+    "date": "2025-06-05",
+    "availabale": true
+  },
+  {
+    "number": "49794",
+    "type": "luxury",
+    "date": "2025-05-03",
+    "availabale": true
+  },
+  {
+    "number": "8972",
+    "type": "luxury",
+    "date": "2025-05-03",
+    "availabale": true
+  },
+  {
+    "number": "8492",
+    "type": "electric",
+    "date": "2025-05-03",
+    "available": false
+  },
+  {
+    "number": "658692",
+    "type": "luxury",
+    "date": "2000-07-12",
+    "available": false
+  },
+  {
+    "number": "863",
+    "type": "economical",
+    "date": "2025-05-08",
+    "available": true
+  },
+  {
+    "number": "25386",
+    "type": "electric",
+    "date": "2002-04-03",
+    "available": true
+  },
+  {
+    "number": "85870",
+    "type": "electric",
+    "date": "2025-05-30",
+    "available": true
+  },
+  {
+    "number": "20003",
+    "type": "electric",
+    "date": "2025-05-04",
+    "available": true
+  },
+  {
+    "number": "4794",
+    "type": "economical",
+    "date": "2025-05-04",
+    "available": true
+  },
+  {
+    "number": "100009",
+    "type": "luxury",
+    "date": "2025-05-04",
+    "available": true
+  },
+  {
+    "number": "4444",
+    "type": "luxury",
+    "date": "2025-05-04",
+    "available": true
   }
 ]

@@ -6,5 +6,13 @@
       "GVHCJ"
     ],
     "id": "b549d02d-69dd-43ae-80c9-425dc17e92b2"
+  },
+  {
+    "carNumber": "209647",
+    "date": "3025-10-10",
+    "faults": [
+      "dkc"
+    ],
+    "id": "f3bebab1-7243-4fd5-aa8a-6121c56e2a9a"
   }
 ]
