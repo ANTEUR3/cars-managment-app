@@ -145,10 +145,10 @@ saleRoute.post('/',async(req,res)=>{
             return car;
            }
     })
+    sales.push(newSale)
 
    await fs.writeFile('./Data/sales.json', JSON.stringify(sales, null, 2), 'utf8');
 
-    sales.push(newSale)
 
    await fs.writeFile('./Data/cars.json', JSON.stringify(cars_, null, 2), 'utf8');
 

@@ -20,10 +20,13 @@ const DisplaySale = (props: Props) => {
 
     const [filtredSales,setFiltredSales]=useState(sales)
     useEffect(()=>{
-        if(context.date != null){
+        if((context.date) != ""){
             const sales_=sales.filter((sale)=>(sale.date).toString()==(context.date)?.toString())
              setFiltredSales(sales_)
+        }else{
+            setFiltredSales(sales)
         }
+        console.log(context.date)
     },[context])
 
     const displaySales=useMemo(()=>{
@@ -33,8 +36,9 @@ const DisplaySale = (props: Props) => {
     },[filtredSales])
 
   return (
-    <div className='lg:px-[100px] lg:pt-[50px]'>
-        {displaySales}
+    <div className='lg:px-[100px] lg:pt-[50px] lg:flex flex-col justify-start lg:gap-y-3'>
+        {filtredSales.length!=0?displaySales:''}
+        
     </div>
   )
 }

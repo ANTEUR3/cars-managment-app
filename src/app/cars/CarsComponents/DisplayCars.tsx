@@ -13,12 +13,13 @@ const DisplayCars = ({cars}: {cars:carType[]}) => {
   const context=useFilterContext();
   const [filtredCars,setFiltredCars]=useState(cars)
   const [carNumber,setCarNumber]=useState(0)
+  const [visible,setVisible]=useState(false)
 
 
   const displayCars=useMemo(()=>{
     return [...Array(6)].map((_, i) => {
       if(i+(index*6)<filtredCars.length){
-        return  <Car carNumber={carNumber} setCarNumber={setCarNumber} key={i+index*6} car={filtredCars[i+index*6]} />
+        return  <Car setVisible={setVisible} carNumber={carNumber} setCarNumber={setCarNumber} key={i+index*6} car={filtredCars[i+index*6]} />
 
       }
 
@@ -52,14 +53,13 @@ const decrementIndex=()=>{
   }
 
 }
-const [visible,setVisible]=useState(false)
  
 
 
  
   return (
     <div className='lg:px-[50px] lg:pt-5 relative'>
-      <PurchaseForm setCarNumber={setCarNumber} visible={visible} setVisible={setVisible} setAlert={setVisible} carNumber={carNumber}  />
+      <PurchaseForm setCarNumber={setCarNumber} visible={visible} setVisible={setVisible}  carNumber={carNumber}  />
       <MdNavigateNext onClick={incrementIndex} className={`lg:text-5xl  absolute top-[50%] -translate-y-[50%] lg:right-4 ${(index+1)*6 <filtredCars.length?'   cursor-pointer text-black hover:text-6xl':'text-gray-500'}`} />
       <GrFormPrevious onClick={decrementIndex} className={`lg:text-5xl  absolute top-[50%] -translate-y-[50%] lg:left-4 ${index>0 ?'   cursor-pointer text-black hover:text-6xl':'text-gray-500'}`}  />
       {displayCars}

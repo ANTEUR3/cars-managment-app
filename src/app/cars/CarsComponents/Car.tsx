@@ -11,7 +11,7 @@ import { BiSolidPurchaseTagAlt } from "react-icons/bi";
 
 type Props = {}
 
-const Car = ({car,carNumber,setCarNumber}: {car:carType,carNumber:Number,setCarNumber:any}) => {
+const Car = ({car,carNumber,setCarNumber,setVisible}: {car:carType,carNumber:Number,setCarNumber:any,setVisible:any}) => {
 
 
    const [inspectation,setInspectation]=useState<inspectionType[] | []>([]);   
@@ -39,7 +39,7 @@ const Car = ({car,carNumber,setCarNumber}: {car:carType,carNumber:Number,setCarN
                 show inspectations
           </div>
           
-          <button onClick={()=>{setCarNumber(car.number)}} className={`lg:flex lg:justify-start items-center lg:gap-x-[10px]  font-semibold lg:text-sm text-black lg:rounded-lg lg:px-3 lg:py-2 transition-all duration-600  ${!car.available?'bg-gray-400 ':'bg-green-500 cursor-pointer hover:bg-green-400 text-gray-100'}  `}>
+          <button onClick={()=>{setCarNumber(car.number);setVisible(true)}} className={`lg:flex lg:justify-start items-center lg:gap-x-[10px]  font-semibold lg:text-sm text-black lg:rounded-lg lg:px-3 lg:py-2 transition-all duration-600  ${!car.available?'bg-gray-400 ':'bg-green-500 cursor-pointer hover:bg-green-400 text-gray-100'}  `}>
              <BiSolidPurchaseTagAlt className='text-gray-100 lg:text-lg' />
             <p>sale</p>
           </button>

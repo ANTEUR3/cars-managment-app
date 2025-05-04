@@ -69,42 +69,90 @@
     "number": "863",
     "type": "economical",
     "date": "2025-05-08",
-    "available": true
+    "available": false
   },
   {
     "number": "25386",
     "type": "electric",
     "date": "2002-04-03",
-    "available": true
+    "available": false
   },
   {
     "number": "85870",
     "type": "electric",
     "date": "2025-05-30",
-    "available": true
+    "available": false
   },
   {
     "number": "20003",
     "type": "electric",
     "date": "2025-05-04",
-    "available": true
+    "available": false
   },
   {
     "number": "4794",
     "type": "economical",
     "date": "2025-05-04",
-    "available": true
+    "available": false
   },
   {
     "number": "100009",
     "type": "luxury",
     "date": "2025-05-04",
-    "available": true
+    "available": false
   },
   {
     "number": "4444",
     "type": "luxury",
     "date": "2025-05-04",
+    "available": false
+  },
+  {
+    "number": "249",
+    "type": "electric",
+    "date": "2025-05-29",
+    "available": false
+  },
+  {
+    "number": "713008",
+    "type": "electric",
+    "date": "2025-05-31",
+    "available": false
+  },
+  {
+    "number": "8942",
+    "type": "electric",
+    "date": "2025-05-02",
+    "available": false
+  },
+  {
+    "number": "570220",
+    "type": "economical",
+    "date": "2025-05-23",
+    "available": false
+  },
+  {
+    "number": "373",
+    "type": "economical",
+    "date": "2025-06-06",
+    "available": false
+  },
+  {
+    "number": "46942",
+    "type": "electric",
+    "date": "2025-05-31",
+    "available": false
+  },
+  {
+    "number": "119840",
+    "type": "luxury",
+    "date": "2025-05-21",
     "available": true
+  },
+  {
+    "number": "23425",
+    "type": "electric",
+    "date": "2025-05-02",
+    "available": false
   }
 ]

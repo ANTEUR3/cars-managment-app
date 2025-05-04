@@ -29,7 +29,7 @@ export type filterContextType={
 
 
 export type saleFilterType={
-    date:Date | null;
+    date:Date | String;
     setDate:any,
     price?:Number,
     setPrice?:any

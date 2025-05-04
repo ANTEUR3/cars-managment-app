@@ -7,7 +7,7 @@ import DisplaySale from './salesComponents/DisplaySale'
 type Props = {}
 
 const page = (props: Props) => {
-  const [date,setDate]=useState(null)
+  const [date,setDate]=useState("")
 
 
  
