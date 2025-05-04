@@ -13,7 +13,7 @@ const Inspectation = ({ins,i}: {ins:inspectionType,i:any}) => {
     const [index,setIndex]=useState(0)
     
   return (
-    <div key={i} className={`flex lg:flex lg:justify-start lg:items-center lg:gap-[50px] bg-gray-100 lg:py-2 `}>
+    <div key={(ins.id)?.toString()} className={`flex lg:flex lg:justify-start lg:items-center lg:gap-[50px] bg-gray-100 lg:py-2 `}>
            <div className='lg:w-[150px] flex justify-start items-center lg:gap-x-[10px]'>
                   <MdOutlineNumbers className='lg:text-3xl  lg:font-semibold' />
                   <h1 className='lg:font-semibold lg:tet-3xl '>{(ins.carNumber).toString()}</h1>

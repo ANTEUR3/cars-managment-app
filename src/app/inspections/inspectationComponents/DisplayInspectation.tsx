@@ -32,7 +32,7 @@ const DisplayInspectation = (props: Props) => {
 
     const displayInspectation_=useMemo(()=>{
       return filtredInspectation.map((ins:inspectionType,index:any)=>{
-          return <Inspectation ins={ins} i={index}  />
+          return <Inspectation key={(ins.id)?.toString()} ins={ins} i={index}   />
       })
   },[filtredInspectation])
 
