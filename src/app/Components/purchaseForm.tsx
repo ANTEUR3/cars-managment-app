@@ -65,7 +65,7 @@ useEffect(()=>{
                   }
                   handleCancel()
                   if(carNumber){
-                    window.location.reload()
+                  window.location.reload()
 
                   }
                   
@@ -84,12 +84,7 @@ useEffect(()=>{
                    }
                         
                  },[cars])
-               useEffect(()=>{
-                   if(carNumber){
-                    formData.carNumber=carNumber;
-                    console.log(carNumber)
-                   }
-               },[carNumber])   
+               
     return (
         <div className={`flex items-center py-12  px-12 rounded-xl   justify-center  bg-white  absolute z-10 left-[50%] -translate-x-[50%] top-[50%] transition-all duration-800 shadow-lg border-2 border-yellow-500 ${visible ?'-translate-y-[50%]':'-translate-y-[1000px]'}` }>
             <MdCancel onClick={()=>{setVisible(false);if(carNumber){setCarNumber(0)}}} className=' text-2xl text-black absolute right-3 top-3 cursor-pointer hover:text-red-500 hover:scale-105' />
@@ -140,7 +135,7 @@ useEffect(()=>{
                                 id="carNumber"
                                 name="carNumber"
                                 readOnly
-                                value={(formData.carNumber).toString() || ""}
+                                value={(carNumber)?.toString() || ""}
                                 className="w-full pl-10 pr-3 py-2 bg-white border border-yellow-500 rounded focus:outline-none focus:ring-1 focus:ring-neutral-700"
                                 
                               />
