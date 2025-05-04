@@ -62,6 +62,12 @@ const decrementIndex=()=>{
       <PurchaseForm setCarNumber={setCarNumber} visible={visible} setVisible={setVisible}  carNumber={carNumber}  />
       <MdNavigateNext onClick={incrementIndex} className={`lg:text-5xl  absolute top-[50%] -translate-y-[50%] lg:right-4 ${(index+1)*6 <filtredCars.length?'   cursor-pointer text-black hover:text-6xl':'text-gray-500'}`} />
       <GrFormPrevious onClick={decrementIndex} className={`lg:text-5xl  absolute top-[50%] -translate-y-[50%] lg:left-4 ${index>0 ?'   cursor-pointer text-black hover:text-6xl':'text-gray-500'}`}  />
+       <div className={`lg:flex lg:justify-start lg:items-center lg:px-[60px] lg:gap-x-[50px] lg:py-4 lg:mb-3 bg-gray-100 ${carNumber!=0?'opacity-0':'opacity-100'}`}>
+       <p className='lg:w-[130px] lg:px-3 text-red-500 text-xl'>Car number</p>
+       <p className='lg:w-[130px] lg:px-3 text-red-500 translate-x-[100px] text-xl'>Car type</p>
+       <p className='lg:w-[190px] lg:px-3 text-red-500 translate-x-[190px] text-xl'>Registration date</p>
+     
+       </div>
       {displayCars}
     </div>
   )

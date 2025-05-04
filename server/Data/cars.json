@@ -144,15 +144,21 @@
     "available": false
   },
   {
-    "number": "119840",
-    "type": "luxury",
-    "date": "2025-05-21",
-    "available": true
-  },
-  {
     "number": "23425",
     "type": "electric",
     "date": "2025-05-02",
     "available": false
+  },
+  {
+    "number": "23456",
+    "type": "electric",
+    "date": "2025-05-29",
+    "available": false
+  },
+  {
+    "number": "789",
+    "type": "electric",
+    "date": "2025-05-17",
+    "available": true
   }
 ]

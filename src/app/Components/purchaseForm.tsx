@@ -64,6 +64,10 @@ useEffect(()=>{
 
                   }
                   handleCancel()
+                  if(carNumber){
+                    window.location.reload()
+
+                  }
                   
                   
                 }, 500);

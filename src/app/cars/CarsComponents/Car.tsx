@@ -7,7 +7,7 @@ import {getInspections} from '../../../DataFunctions/inspection'
 import {inspectionType} from '../../Types'
 import { MdOutlineDeleteForever } from "react-icons/md";
 import { BiSolidPurchaseTagAlt } from "react-icons/bi";
-
+import {deleteCar} from '../../../DataFunctions/car'
 
 type Props = {}
 
@@ -35,15 +35,13 @@ const Car = ({car,carNumber,setCarNumber,setVisible}: {car:carType,carNumber:Num
                 <BsFillCalendarDateFill className='lg:text-3xl  lg:font-semibold' />
 
           </CarItem>
-          <div className={`lg:flex lg:justify-start items-center lg:gap-x-[10px]  font-semibold lg:text-sm text-black lg:rounded-lg lg:px-3 lg:py-2 transition-all duration-600  ${carInspectation.length==0?'bg-gray-400 ':'bg-yellow-500 cursor-pointer hover:bg-yellow-400'} `}>
-                show inspectations
-          </div>
+          
           
           <button onClick={()=>{setCarNumber(car.number);setVisible(true)}} className={`lg:flex lg:justify-start items-center lg:gap-x-[10px]  font-semibold lg:text-sm text-black lg:rounded-lg lg:px-3 lg:py-2 transition-all duration-600  ${!car.available?'bg-gray-400 ':'bg-green-500 cursor-pointer hover:bg-green-400 text-gray-100'}  `}>
              <BiSolidPurchaseTagAlt className='text-gray-100 lg:text-lg' />
             <p>sale</p>
           </button>
-          <button className={`lg:flex lg:justify-start items-center lg:gap-x-[10px]  font-semibold lg:text-sm  lg:rounded-lg lg:px-3 lg:py-2 bg-red-500 cursor-pointer hover:bg-red-400 text-gray-100 transition-all duration-600 ` }>
+          <button className={`lg:flex lg:justify-start items-center lg:gap-x-[10px]  font-semibold lg:text-sm  lg:rounded-lg lg:px-3 lg:py-2 bg-red-500 cursor-pointer hover:bg-red-400 text-gray-100 transition-all duration-600 ` } onClick={()=>{deleteCar(car.number);window.location.reload()}}>
                 <MdOutlineDeleteForever className='text-gray-100 lg:text-lg' />
                 <p>Delet</p>       
          </button>

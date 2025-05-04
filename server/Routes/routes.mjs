@@ -56,6 +56,34 @@ carRouter.post('/',async(req,res)=>{
 
 
 })
+
+
+carRouter.delete('/:id',async(req,res)=>{
+       
+  try {
+            const {id}=req.params;
+            console.log('argentina')
+    
+
+      // Asynchronously read the content of the cars.json file
+      const data = await fs.readFile('./Data/cars.json', 'utf8');
+      const cars= JSON.parse(data);
+
+       const cars_=cars.filter((car)=>(car.number).toString() !== id.toString())
+
+     await fs.writeFile('./Data/cars.json', JSON.stringify(cars_, null, 2), 'utf8');
+
+
+     return res.status(200).send();
+     
+  
+    } catch (error) {
+      console.error('Error reading cars.json:', error);
+      res.status(500).json({ error: 'Failed to retrieve car data.' });
+    }
+
+
+})
 //------------------------------------------------------------------------------------
 
 

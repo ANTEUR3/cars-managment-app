@@ -16,5 +16,11 @@ export const newCar=async(newCar:carType)=>{
     return json
  }
 
+ export const deleteCar=async(id:Number)=>{
+    const cars=await  fetch(`http://localhost:5000/api/cars/${id}`,{method:'DELETE'
+    })
+
+ }
+
  
  
