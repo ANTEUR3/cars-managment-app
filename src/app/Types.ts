@@ -34,3 +34,8 @@ export type saleFilterType={
     price?:Number,
     setPrice?:any
 }
+
+export type inspectationFilterType={
+    carNumber:Number | " ",
+    setCarNumber:any
+}

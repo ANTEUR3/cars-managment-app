@@ -14,5 +14,14 @@
       "dkc"
     ],
     "id": "f3bebab1-7243-4fd5-aa8a-6121c56e2a9a"
+  },
+  {
+    "carNumber": "119840",
+    "date": "2025-05-30",
+    "faults": [
+      "1",
+      "5"
+    ],
+    "id": "17dbbbbe-e3cc-4ce7-9ca6-af7e474e2ac9"
   }
 ]
