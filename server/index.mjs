@@ -12,7 +12,7 @@ app.use(cors({
 const port=process.env.PORT ;
 
 app.listen((5000),()=>{
-    console.log(`'hello from ${port}...`)
+    console.log(`server run successfully`)
 })
 app.use(express.json());
 
