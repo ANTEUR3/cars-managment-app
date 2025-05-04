@@ -22,6 +22,9 @@ Recording a sale
 Encouraging periodic inspections</p>
 
 
+It also allows viewing all cars, sales and practically periodic inspection.
+
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
