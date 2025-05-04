@@ -7,5 +7,14 @@
       "unbalanced steering wheel"
     ],
     "id": "be5a9852-f2ac-4bed-9e56-134429f769a0"
+  },
+  {
+    "carNumber": "657558",
+    "date": "2025-05-04",
+    "faults": [
+      "slow engine",
+      "under-inflated tires"
+    ],
+    "id": "e44337d3-fbb0-4d7d-bfd6-c9b465a0d58a"
   }
 ]

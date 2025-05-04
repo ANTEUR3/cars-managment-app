@@ -40,8 +40,8 @@ const Landing = ({alert,visible,setVisible , inspection, setInspection, purchase
              </p>
              <div className='lg:flex lg:justify-star lg:items-center lg:gap-x-[20px] lg:mt-[10px]'>
                 <Link onClick={()=>{setVisible(true)}} href={"/"} className='lg:px-3 lg:py-2 lg:rounded-lg text-black font-semibold bg-yellow-500 hover:scale-105 hover:bg-yellow-400'>new car</Link>
-                <Link onClick={()=>{setInspection(true)}} href={"/"} className='lg:px-3 lg:py-2 lg:rounded-lg text-black font-semibold bg-yellow-500 hover:scale-105 hover:bg-yellow-400'>new test</Link>
-                <Link onClick={()=>{setPurchase(true)}} href={"/"} className='lg:px-3 lg:py-2 lg:rounded-lg text-black font-semibold bg-yellow-500 hover:scale-105 hover:bg-yellow-400'>new purchase</Link>
+                <Link onClick={()=>{setInspection(true)}} href={"/"} className='lg:px-3 lg:py-2 lg:rounded-lg text-black font-semibold bg-yellow-500 hover:scale-105 hover:bg-yellow-400'>new inspection</Link>
+                <Link onClick={()=>{setPurchase(true)}} href={"/"} className='lg:px-3 lg:py-2 lg:rounded-lg text-black font-semibold bg-yellow-500 hover:scale-105 hover:bg-yellow-400'>new sale</Link>
              </div>
         </div>
         <Image src={blackCar} alt='' className='lg:w-[550px] lg:h-[400px] absolute right-[100px]'/>

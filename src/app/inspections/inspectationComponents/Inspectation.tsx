@@ -9,7 +9,7 @@ import { MdNavigateNext } from "react-icons/md";
 
 type Props = {}
 
-const Inspectation = ({ins,i}: {ins:inspectionType,i:any}) => {
+const Inspectation = ({ins}: {ins:inspectionType}) => {
     const [index,setIndex]=useState(0)
     
   return (
