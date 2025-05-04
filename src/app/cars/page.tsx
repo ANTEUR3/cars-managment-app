@@ -15,7 +15,9 @@ const page = (props: Props) => {
                setCars(res)
         })      
     },[])
-
+useEffect(()=>{
+  console.log(cars)
+},[cars])
     
 
     const [carType,setCarType]=useState('All types')
@@ -29,8 +31,9 @@ const page = (props: Props) => {
               <FilterItem item={'electric'} />
               <FilterItem item={'luxury'} />
           </FilterBar>
+          <DisplayCars cars={cars} />
+
        </filterContext.Provider>
-       <DisplayCars cars={cars} />
     </div>
   )
 }

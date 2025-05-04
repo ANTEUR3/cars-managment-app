@@ -1,4 +1,4 @@
-import React,{useState , useEffect , } from 'react'
+import React,{useState , useEffect, useMemo , } from 'react'
 import Link from 'next/link'
 import {FaAddressCard } from 'react-icons/fa'
 
@@ -109,7 +109,22 @@ useEffect(()=>{
 
     }
     
+    const displaycars=useMemo(()=>{
+      if(cars){
+        return cars.map((car,index)=>{
+          if(car.available){
+           return <option key={(car.number.toString())} value={(car.number).toString()}>{(car.number).toString()}</option>
+         }
+        })
+      }
+           
+    },[cars])
    
+   useEffect(()=>{
+         console.log(cars)
+   },[cars])
+
+
     return (
         <div className={`flex items-center py-12  px-12 rounded-xl   justify-center  bg-white  absolute z-10 left-[50%] -translate-x-[50%] top-[50%] transition-all duration-800 shadow-lg border-2 border-yellow-500 ${visible?'-translate-y-[50%]':'-translate-y-[1000px]'}` }>
             <MdCancel onClick={()=>{setVisible(false),handleCancel()}} className=' text-2xl text-black absolute right-3 top-3 cursor-pointer hover:text-red-500 hover:scale-105' />
@@ -137,9 +152,7 @@ useEffect(()=>{
                     required
                   >
                     <option value={0} >Select a car</option>
-                    {cars.map((car)=>(
-                      <option key={(car.number.toString())} value={(car.number).toString()}>{(car.number).toString()}</option>
-                    ))}
+                    {displaycars}
                     </select>
                 </div>
               

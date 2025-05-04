@@ -3,7 +3,7 @@
 import { saleType } from "@/app/Types";
 export const getSaleData = async () => {
 
-    const sales=await fetch('http://localhost:5000/sales');
+    const sales=await fetch('http://localhost:5000/api/sales');
     const json=await sales.json();
     return json;
 }

@@ -15,3 +15,6 @@ export const newCar=async(newCar:carType)=>{
     const json=await cars.json()
     return json
  }
+
+ 
+ 

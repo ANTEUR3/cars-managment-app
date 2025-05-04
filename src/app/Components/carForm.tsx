@@ -44,7 +44,7 @@ const CarForm = ({
       number: formData.carNumber,
       type: formData.carType,
       date: formData.date,
-      availabale: true,
+      available: true,
     });
     setTimeout(() => {
       setVisible(false);

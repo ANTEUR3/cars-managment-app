@@ -2,7 +2,7 @@ export type carType={
     number:Number,
     type:String,
     date:Date,
-    availabale:Boolean,
+    available:Boolean,
 }
 
 export type inspectionType={
@@ -25,4 +25,12 @@ export type filterContextType={
     setCarType:any,
     available:boolean,
     setAvailable:any
+}
+
+
+export type saleFilterType={
+    date:Date | null;
+    setDate:any,
+    price?:Number,
+    setPrice?:any
 }

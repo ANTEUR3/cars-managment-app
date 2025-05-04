@@ -6,7 +6,7 @@ type Props = {}
 const FilterBar = ({children}: {children:ReactNode}) => {
     const context=useFilterContext()
   return (
-    <div className='lg:flex lg:justify-between lg:items-center w-[66%]  lg:pl-[50px]'>
+    <div className='lg:flex lg:justify-between lg:items-center w-full  lg:px-[100px]'>
         <div className='lg:flex lg:justify-start lg:items-center lg:gap-x-[20px]'>
              {children}
         </div>
